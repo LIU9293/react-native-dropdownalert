@@ -273,7 +273,7 @@ export default class DropdownAlert extends Component {
             });
             if (this.props.updateStatusBar) {
               if (IS_ANDROID) {
-                StatusBar.setBackgroundColor(this.props.inactiveStatusBarBackgroundColor, true);
+                // StatusBar.setBackgroundColor(this.props.inactiveStatusBarBackgroundColor, true);
               } else {
                 StatusBar.setBarStyle(this.props.inactiveStatusBarStyle, true);
               }
@@ -303,7 +303,7 @@ export default class DropdownAlert extends Component {
       });
       if (this.props.updateStatusBar) {
         if (IS_ANDROID) {
-          StatusBar.setBackgroundColor(this.props.inactiveStatusBarBackgroundColor, true);
+          // StatusBar.setBackgroundColor(this.props.inactiveStatusBarBackgroundColor, true);
         } else {
           StatusBar.setBarStyle(this.props.inactiveStatusBarStyle, true);
         }
@@ -452,8 +452,8 @@ export default class DropdownAlert extends Component {
       }
       if (updateStatusBar) {
         if (IS_ANDROID) {
-          StatusBar.setBackgroundColor(activeStatusBarBackgroundColor, true);
-          StatusBar.setTranslucent(translucent);
+          // StatusBar.setBackgroundColor(activeStatusBarBackgroundColor, true);
+          // StatusBar.setTranslucent(translucent);
         } else if (IS_IOS) {
           StatusBar.setBarStyle(activeStatusBarStyle, true);
         }
